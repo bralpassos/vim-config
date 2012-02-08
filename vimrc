@@ -9,6 +9,7 @@ set nocompatible    " Be IMproved
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+syntax on           " Todas as opções referentes ao background, por exemplo, ficam no próprio arquivo de cores
 set showmode        " Sempre exibir em qual modo esta atualmente
 set number          " Mostra o número de linhas
 set nowrap          " Não quebre a linha,
@@ -28,3 +29,5 @@ set tabstop=4       " Tab equivale a 4 espaços
 set shiftwidth=4    " Operações como identação usando o >> também com 4 espaços
 set softtabstop=4   " Operações como o backspace também com 4 espaços
 
+" Opção de cor obtida em <bytefluent.com/vivify/> com diversas modificações pessoais 
+colorscheme darkburn
