@@ -6,3 +6,13 @@ Todos os plugin estarão instalados através do Pathogen e utilizando submódulo
 Crie um link do vimrc controlado pelo git para o seu $HOME:
 
     ln -s ~/.vim/vimrc ~/.vimrc
+    
+## Submódulos
+
+Para atualizar todos os plugins com a última versão no Github:
+
+    git submodule update --init
+
+Mapas de teclas:
+
+    F5: Toogle do NERDTree
