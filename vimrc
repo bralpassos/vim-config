@@ -34,3 +34,17 @@ colorscheme darkburn
 
 " Mapeamento do NERDTree, simplesmente não consigo mais utilizar nenhuma outra tecla além do F5
 map <F5> :NERDTreeToggle<CR>
+
+" Pula duas linhas por scroll 
+noremap <C-e> 2<C-e>
+noremap <C-y> 2<C-y>
+
+" Ao salvar um buffer remover todos os espaços em branco ao final da linha
+if has('autocmd')
+    autocmd BufWritePre * :call <SID>StripWhite()
+
+    fun! <SID>StripWhite() 
+        %s/[ \t]\+$//ge
+        %s!^\( \+\)\t!\=StrRepeat("\t", 1 + strlen(submatch(1)) / 8)!ge
+    endfun
+endif
