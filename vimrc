@@ -22,3 +22,9 @@ set noswapfile      " Commit all the fucking time
 set incsearch       " Pesquisa incremental
 set ignorecase      " Auto explicativo...
 set hlsearch        " Highligth search :)
+
+set expandtab       " Troca o tab or espaços
+set tabstop=4       " Tab equivale a 4 espaços
+set shiftwidth=4    " Operações como identação usando o >> também com 4 espaços
+set softtabstop=4   " Operações como o backspace também com 4 espaços
+
