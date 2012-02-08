@@ -31,3 +31,6 @@ set softtabstop=4   " Operações como o backspace também com 4 espaços
 
 " Opção de cor obtida em <bytefluent.com/vivify/> com diversas modificações pessoais 
 colorscheme darkburn
+
+" Mapeamento do NERDTree, simplesmente não consigo mais utilizar nenhuma outra tecla além do F5
+map <F5> :NERDTreeToggle<CR>
