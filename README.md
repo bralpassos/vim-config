@@ -13,6 +13,10 @@ Para atualizar todos os plugins com a última versão no Github:
 
     git submodule update --init
 
+Todos os arquivos do plugin, como /doc, /syntax e etc ficam em seu diretório específico dentro do vim/bundle.
+Para remover o plugin basta remover o diretório, sem ter que ficar caçando onde tem arquivos do plugin.
+Além disso ao rodar o update do submodule todos os plugins estarão com a última versão de desenvolvimento que está no GitHub, com pouquíssima excessões.
+
 ## Mapas de teclas:
 
 * F5: Toogle do NERDTree

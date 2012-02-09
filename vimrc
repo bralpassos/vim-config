@@ -13,13 +13,15 @@ syntax on           " Todas as opções referentes ao background, por exemplo, f
 set showmode        " Sempre exibir em qual modo esta atualmente
 set number          " Mostra o número de linhas
 set nowrap          " Não quebre a linha,
-
 set ruler           " Mostra a posição do cursor
+set title           " Exite o nome do buffer no título do terminal
+
 set hidden          " Faz com que os buffers sejan escondidos ao invés de fechados ao terminar a edição
-set autoindent      " Mantém a mesma identação que a linha anterior
 set nobackup        " Confio no meu controlador de versões :)
 set noswapfile      " Commit all the fucking time
+set autoread        " Para os casos do arquivo ser alterado após aberto
 
+set autoindent      " Mantém a mesma identação que a linha anterior
 set incsearch       " Pesquisa incremental
 set ignorecase      " Auto explicativo...
 set hlsearch        " Highligth search :)
@@ -29,21 +31,22 @@ set tabstop=4       " Tab equivale a 4 espaços
 set shiftwidth=4    " Operações como identação usando o >> também com 4 espaços
 set softtabstop=4   " Operações como o backspace também com 4 espaços
 
-" Opção de cor obtida em <bytefluent.com/vivify/> com diversas modificações pessoais 
+" Opção de cor obtida em <bytefluent.com/vivify/> com diversas modificações pessoais
 colorscheme darkburn
 
 " Mapeamento do NERDTree, simplesmente não consigo mais utilizar nenhuma outra tecla além do F5
-map <F5> :NERDTreeToggle<CR>
+noremap <F5> :NERDTreeToggle<CR>
 
-" Pula duas linhas por scroll 
+" Pula duas linhas por scroll
 noremap <C-e> 2<C-e>
 noremap <C-y> 2<C-y>
 
 " Ao salvar um buffer remover todos os espaços em branco ao final da linha
 if has('autocmd')
+    autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc "Ao editar o vimrc o recarrega após salvar
     autocmd BufWritePre * :call <SID>StripWhite()
 
-    fun! <SID>StripWhite() 
+    fun! <SID>StripWhite()
         %s/[ \t]\+$//ge
         %s!^\( \+\)\t!\=StrRepeat("\t", 1 + strlen(submatch(1)) / 8)!ge
     endfun
