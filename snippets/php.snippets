@@ -1,0 +1,78 @@
+snippet ci_controller
+	<?php if (! defined('BASEPATH')) exit('No direct script access allowed');
+	/**
+	 * `Filename('$1.php', 'controller.php')`
+	 *
+	 * ${1:Descrição da classe }
+	 *
+	 * @author CaSoft Tecnologia <contato@casoft.info>
+	 * @author Bruno Almeida <bruno@casoft.info>
+	 * @subpackage controllers
+	 */
+
+	class `Filename('', 'controller.php')` extends MY_Controller {
+
+	    public function  __construct() {
+	        parent::__construct();
+	    }
+
+	    /**
+	     * index
+		 *
+		 * Método principal da classse `Filename('', 'controller.php')`
+	     *
+	     * @access public
+	     * @return void
+	     */
+	    public function index() {
+	        ${2:// Código...}
+	    }
+	}
+
+	/* End of file `Filename('$1.php', 'controller.php')` */
+	/* Location: ./application/controllers/`Filename('$1.php', 'controller.php')` */
+
+snippet ci_model
+	<?php if (! defined('BASEPATH')) exit('No direct script access allowed');
+	/**
+	 * `Filename('$1.php', 'model.php')`
+	 *
+	 * Model `Filename('', 'model')`
+	 *
+	 * @author 		CaSoft Tecnologia <contato@casoft.info>
+	 * @author      Bruno Almeida <bruno@casoft.info>
+	 * @package
+	 * @subpackage  models
+	 */
+	class `Filename('', 'model')` extends CI_Model {
+
+	    public function  __construct() {
+	        parent::__construct();
+		}
+	}
+
+	/* End of file `Filename('$1.php', 'model.php')` */
+	/* Location: ./application/models/`Filename('$1.php', 'model.php')` */
+
+snippet foreacht
+	<?php foreach ($${1:variable} as $${2:key}) : ?>
+	    ${3:}
+	<?php endforeach; ?>
+
+snippet ift
+	<?php if (${1:condition}) : ?>
+	    ${2:}
+	<?php endif; ?>
+
+snippet debug
+	echo '<pre>';
+	print_r(${1});
+	die();
+
+snippet debugt
+	<pre>
+		<?php print_r(${1}); ?>
+	</pre>
+
+snippet echot
+	<?php echo $${1:variable}; ?>
