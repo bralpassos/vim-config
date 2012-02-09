@@ -55,8 +55,11 @@ let mapleader = ","
 map <leader>p :set paste<CR>
 map <leader>P :set nopaste<CR>
 
-" Desabilidar a marcação das palavras pesquisadas
-map <leader>h :set nohlsearch<CR>
+" Desabilidar a marcação das palavras pesquisadas no momento
+map <leader>h :nohlsearch<CR>
+
+" Define a linha atual como a linha zero na régua"
+map <leader>r :set relativenumber<CR>
 
 " Pula duas linhas por scroll
 noremap <C-e> 2<C-e>
