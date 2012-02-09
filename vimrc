@@ -55,9 +55,6 @@ let mapleader = ","
 map <leader>p :set paste<CR>
 map <leader>P :set nopaste<CR>
 
-" Mapeamento do NERDTree, simplesmente não consigo mais utilizar nenhuma outra tecla além do F5
-noremap <F5> :NERDTreeToggle<CR>
-
 " Desabilidar a marcação das palavras pesquisadas
 map <leader>h :set nohlsearch<CR>
 
