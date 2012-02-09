@@ -19,4 +19,6 @@ Além disso ao rodar o update do submodule todos os plugins estarão com a últi
 
 ## Mapas de teclas:
 
-* F5: Toogle do NERDTree
+* F5 => Toogle do NERDTree
+* ,p => set paste // permite colar um texto externo mantendo a identação
+* ,P => set nopaste
