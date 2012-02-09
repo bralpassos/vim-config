@@ -58,6 +58,9 @@ map <leader>P :set nopaste<CR>
 " Mapeamento do NERDTree, simplesmente não consigo mais utilizar nenhuma outra tecla além do F5
 noremap <F5> :NERDTreeToggle<CR>
 
+" Desabilidar a marcação das palavras pesquisadas
+map <leader>h :set nohlsearch<CR>
+
 " Pula duas linhas por scroll
 noremap <C-e> 2<C-e>
 noremap <C-y> 2<C-y>
