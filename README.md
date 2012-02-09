@@ -17,8 +17,3 @@ Todos os arquivos do plugin, como /doc, /syntax e etc ficam em seu diretório es
 Para remover o plugin basta remover o diretório, sem ter que ficar caçando onde tem arquivos do plugin.
 Além disso ao rodar o update do submodule todos os plugins estarão com a última versão de desenvolvimento que está no GitHub, com pouquíssima excessões.
 
-## Mapas de teclas:
-
-* F5 => Toogle do NERDTree
-* ,p => set paste // permite colar um texto externo mantendo a identação
-* ,P => set nopaste
