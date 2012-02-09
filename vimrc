@@ -20,7 +20,6 @@ set showmode        " Sempre exibir em qual modo esta atualmente
 set number          " Mostra o número de linhas
 set nowrap          " Não quebre a linha,
 set ruler           " Mostra a posição do cursor
-set title           " Exite o nome do buffer no título do terminal
 set showmatch       " Destaque no parêntese que casa com o parêntese sob o cursor
 
 set nobackup        " Confio no meu controlador de versões :)
