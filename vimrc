@@ -16,6 +16,7 @@ call pathogen#runtime_append_all_bundles()
 " Opções que afetarão o comportamento visual
 " -----------------------------------------------
 syntax on           " Todas as opções referentes ao background, por exemplo, ficam no próprio arquivo de cores
+filetype on         " Comporta-se adquadamente de acordo com o formato do arquivo sendo editado
 set showmode        " Sempre exibir em qual modo esta atualmente
 set number          " Mostra o número de linhas
 set nowrap          " Não quebre a linha,
@@ -51,6 +52,10 @@ colorscheme darkburn
 " Quem diabos usa o '\' como tecla de atalho?
 let mapleader = ","
 
+" Pula duas linhas por scroll
+noremap <C-e> 2<C-e>
+noremap <C-y> 2<C-y>
+
 " Avisa o vim para identar ou nao o texto ao colar e copiar algo externamente
 map <leader>p :set paste<CR>
 map <leader>P :set nopaste<CR>
@@ -61,9 +66,17 @@ map <leader>h :nohlsearch<CR>
 " Define a linha atual como a linha zero na régua"
 map <leader>r :set relativenumber<CR>
 
-" Pula duas linhas por scroll
-noremap <C-e> 2<C-e>
-noremap <C-y> 2<C-y>
+map <leader>t :TlistToggle<CR>
+
+"-----------------------------------------------
+" Opções para o TagList
+"-----------------------------------------------
+
+let Tlist_Use_Right_Window=1            " Lista de tags à direita
+let Tlist_GainFocus_On_ToggleOpen=1     " Ganhar foco ao abrir a janela
+let Tlist_File_Fold_Auto_Close=1        " Não exibe tags de buffers inativos
+
+let tlist_php_settings='php;c:Classes;f:Functions' " Escondendo variáveis no TagList para PHP
 
 "-----------------------------------------------
 " Opções do autocmd
