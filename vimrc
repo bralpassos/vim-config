@@ -76,17 +76,20 @@ let mapleader = ","
 noremap <C-e> 2<C-e>
 noremap <C-y> 2<C-y>
 
+" Desabilidar a marcação das palavras pesquisadas no momento
+map <leader>h :nohlsearch<CR>
+
 " Avisa o vim para identar ou nao o texto ao colar e copiar algo externamente
 map <leader>p :set paste<CR>
 map <leader>P :set nopaste<CR>
 
-" Desabilidar a marcação das palavras pesquisadas no momento
-map <leader>h :nohlsearch<CR>
-
-" Define a linha atual como a linha zero na régua"
+" Define a linha atual como a linha zero na régua
 map <leader>r :set relativenumber<CR>
+map <leader>R :set number<CR>
 
 map <leader>t :TlistToggle<CR>
+
+" Como os mapas são apenas atalhos não vi motivo para utilizar o '<silent>'
 
 "-----------------------------------------------
 " Opções para o TagList

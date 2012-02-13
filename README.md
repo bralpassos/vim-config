@@ -19,4 +19,4 @@ Além disso ao rodar o update do submodule todos os plugins estarão com a últi
 
 Notas:
 
-Para que o plugin TagList funcione adequadamente é necessário a instação do 'ctags'.
+Para que o plugin TagList funcione adequadamente é necessário a instação do ctags/exuberant-ctags.
