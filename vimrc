@@ -28,12 +28,16 @@ set noswapfile      " Commit all the fucking time
 set autoread        " Para os casos do arquivo ser alterado após aberto
 
 " -----------------------------------------------
-" Opções da linha de status
+" Opções da linha de status.
 " -----------------------------------------------
+" Exemplo de como fica (sem tantos espaços):
+" [1]   ~/.vimrc    [+]     [vim]   [utf-8]   34,   0x22      0-15 13%"
+" Buffer Arquivo Modificaçao Tipo Codificação Ascii Hex    Coluna Linha Percentual
+
 set laststatus=2    " Quando exibir a linha de status: 2=always
 
 set statusline=                                 " Limpa a linha de status
-set statusline+=(%n)\                           " Número do buffer atual
+set statusline+=[%n]\                           " Número do buffer atual
 set statusline+=%f\                             " Nome do arquivo
 set statusline+=%m%r                            " [+] Quando o arquivo for modificado, [RO] para apenas leitura
 set statusline+=[%{strlen(&ft)?&ft:'none'}]     " Tipo do arquivo
