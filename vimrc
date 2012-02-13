@@ -28,6 +28,22 @@ set noswapfile      " Commit all the fucking time
 set autoread        " Para os casos do arquivo ser alterado após aberto
 
 " -----------------------------------------------
+" Opções da linha de status
+" -----------------------------------------------
+set laststatus=2    " Quando exibir a linha de status: 2=always
+
+set statusline=                                 " Limpa a linha de status
+set statusline+=(%n)\                           " Número do buffer atual
+set statusline+=%f\                             " Nome do arquivo
+set statusline+=%m%r                            " [+] Quando o arquivo for modificado, [RO] para apenas leitura
+set statusline+=[%{strlen(&ft)?&ft:'none'}]     " Tipo do arquivo
+set statusline+=[%{strlen(&fenc)?&fenc:&enc}]   " Codificação
+set statusline+=%=                              " Alinha tudo a seguir à direita
+set statusline+=%b,0x%-8B\                      " ASCII e número hexadecimal do caractere sob o cursor
+set statusline+=%-4.(%l-%c%)\ %<%P              " Linha-coluna e percentual do arquivo
+"set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " Como o vim interpreta o cursor abaixo, tipo vimString
+
+" -----------------------------------------------
 " Opções de pequisa
 " -----------------------------------------------
 set incsearch       " Pesquisa incremental
