@@ -16,15 +16,29 @@ set t_Co=256
 "highlight CursorLine          guifg=#eeeeee ctermfg=255 guibg=#303030 ctermbg=236 gui=none cterm=none
 "highlight Directory           guifg=#dcdccc ctermfg=187                           gui=none cterm=none
 "highlight StatusLine          guifg=#313633 ctermfg=72  guibg=#ccdc90 ctermbg=186 gui=none cterm=none
+"highlight DiffAdd             guifg=#709080 ctermfg=72  guibg=#313c36 ctermbg=72  gui=none cterm=none
+"highlight DiffChange          guifg=#ffffff ctermfg=15  guibg=#333333 ctermbg=236 gui=none cterm=none
+"highlight DiffDelete          guifg=#333333 ctermfg=236 guibg=#464646 ctermbg=238 gui=none cterm=none
+"highlight DiffText            guifg=#8cd0d3 ctermfg=116 guibg=#41363c ctermbg=132 gui=none cterm=none
+"highlight FoldColumn          guifg=#93b3a3 ctermfg=72  guibg=#3f4040 ctermbg=66  gui=none cterm=none
+"highlight Folded              guifg=#93b3a3 ctermfg=72  guibg=#3f4040 ctermbg=66  gui=none cterm=none
 "highlight StatusLineNC        guifg=#2e3330 ctermfg=72  guibg=#88b090 ctermbg=108 gui=none cterm=none
 
 " Minhas modificações "
-highlight Comment             guifg=#eeeeee ctermfg=108 guibg=#1c1c1c ctermbg=234 gui=italic cterm=none
-highlight CursorLine          guibg=#303030 ctermbg=236                           gui=none cterm=none
-highlight Directory           guifg=#c0e0b0 ctermfg=151 guibg=NONE                gui=none cterm=none
-highlight StatusLine          guifg=#e0e0e0 ctermfg=244 guibg=#d6d946 ctermbg=237 gui=bold cterm=bold " current window
-highlight StatusLineNC        guifg=#767676 ctermfg=244 guibg=#363946 ctermbg=237 gui=bold cterm=bold
+highlight Comment             guifg=#eeeeee ctermfg=108     guibg=#1c1c1c ctermbg=234 gui=italic cterm=none
+highlight CursorLine          guibg=#303030 ctermbg=236                               gui=none cterm=none
+highlight Directory           guifg=#c0e0b0 ctermfg=151     guibg=NONE                gui=none cterm=none
+highlight StatusLine          guifg=#e0e0e0 ctermfg=244     guibg=#d6d946 ctermbg=237 gui=bold cterm=bold
+highlight StatusLineNC        guifg=#767676 ctermfg=244     guibg=#363946 ctermbg=237 gui=bold cterm=bold
+highlight DiffAdd             guifg=#80a090 ctermfg=108     guibg=#313c36 ctermbg=22  gui=none cterm=none
+highlight DiffChange          guifg=NONE    ctermfg=NONE    guibg=#4a343a ctermbg=52  gui=none cterm=none
+highlight DiffDelete          guifg=#6c6661 ctermfg=59      guibg=#3c3631 ctermbg=58  gui=none cterm=none
+highlight DiffText            guifg=#f05060 ctermfg=203     guibg=#4a343a ctermbg=52  gui=bold cterm=none
+highlight FoldColumn          guifg=#93b3a3 ctermfg=72      guibg=#3f4040 ctermbg=236 gui=none cterm=none
+highlight Folded              guifg=#93b3a3 ctermfg=72      guibg=#3f4040 ctermbg=236 gui=none cterm=none
 
+
+" Opções padrões
 highlight Boolean             guifg=#dca3a3 ctermfg=181                           gui=none cterm=none
 highlight CTagsClass          guifg=#eeeeee ctermfg=255                           gui=none cterm=none
 highlight CTagsGlobalConstant guifg=#eeeeee ctermfg=255                           gui=none cterm=none
@@ -40,18 +54,12 @@ highlight Debug               guifg=#bca3a3 ctermfg=138                         
 highlight Define              guifg=#ffcfaf ctermfg=223                           gui=none cterm=none
 highlight DefinedName         guifg=#eeeeee ctermfg=255                           gui=none cterm=none
 highlight Delimiter           guifg=#8f8f8f ctermfg=245                           gui=none cterm=none
-highlight DiffAdd             guifg=#709080 ctermfg=72  guibg=#313c36 ctermbg=72  gui=none cterm=none
-highlight DiffChange          guifg=#ffffff ctermfg=15  guibg=#333333 ctermbg=236 gui=none cterm=none
-highlight DiffDelete          guifg=#333333 ctermfg=236 guibg=#464646 ctermbg=238 gui=none cterm=none
-highlight DiffText            guifg=#8cd0d3 ctermfg=116 guibg=#41363c ctermbg=132 gui=none cterm=none
 highlight EnumerationName     guifg=#eeeeee ctermfg=255                           gui=none cterm=none
 highlight EnumerationValue    guifg=#eeeeee ctermfg=255                           gui=none cterm=none
 highlight Error               guifg=#ef9f9f ctermfg=217 guibg=#201010 ctermbg=131 gui=none cterm=none
 highlight ErrorMsg            guifg=#80d4aa ctermfg=115 guibg=#2f2f2f ctermbg=236 gui=none cterm=none
 highlight Exception           guifg=#c3bf9f ctermfg=187                           gui=none cterm=none
 highlight Float               guifg=#c0bed1 ctermfg=146                           gui=none cterm=none
-highlight FoldColumn          guifg=#93b3a3 ctermfg=72  guibg=#3f4040 ctermbg=66  gui=none cterm=none
-highlight Folded              guifg=#93b3a3 ctermfg=72  guibg=#3f4040 ctermbg=66  gui=none cterm=none
 highlight Function            guifg=#efef8f ctermfg=186                           gui=none cterm=none
 highlight Identifier          guifg=#dcdcdc ctermfg=253                           gui=none cterm=none
 highlight Ignore              guifg=#eeeeee ctermfg=255                           gui=none cterm=none
