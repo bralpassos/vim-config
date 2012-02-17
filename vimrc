@@ -31,8 +31,8 @@ set autoread        " Para os casos do arquivo ser alterado após aberto
 " Opções da linha de status.
 " -----------------------------------------------
 " Exemplo de como fica (sem tantos espaços):
-" [1]   ~/.vimrc    [+]     [vim]   [utf-8]   34,   0x22      0-15 13%"
-" Buffer Arquivo Modificaçao Tipo Codificação Ascii Hex    Coluna Linha Percentual
+" [1] [+][RO]  ~/.vimrc       [vim]   [utf-8]   34,   0x22      0-15 13%"
+" Buffer, Modificaçao ou Apenas Leitura, Arquivo, Tipo Codificação, Ascii, Hex, Coluna, Linha, Percentual de scroll do arquivo
 
 set laststatus=2    " Quando exibir a linha de status: 2=always
 
