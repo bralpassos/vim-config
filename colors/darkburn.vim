@@ -8,7 +8,7 @@ highlight clear
 if exists("syntax_on")
 	syntax reset
 endif
-let g:colors_name = "vivify"
+let g:colors_name = "darkburn"
 set t_Co=256
 
 " Original "
