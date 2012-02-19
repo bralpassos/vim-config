@@ -12,17 +12,19 @@ set nocompatible    " Be IMproved
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
+syntax on           " Todas as opções referentes ao background, por exemplo, ficam no próprio arquivo de cores
+
+filetype on         " Comporta-se adquadamente de acordo com o formato do arquivo sendo editado
+
 " -----------------------------------------------
 " Opções que afetarão o comportamento visual
 " -----------------------------------------------
-syntax on           " Todas as opções referentes ao background, por exemplo, ficam no próprio arquivo de cores
-filetype on         " Comporta-se adquadamente de acordo com o formato do arquivo sendo editado
 set showmode        " Sempre exibir em qual modo esta atualmente
 set number          " Mostra o número de linhas
 set nowrap          " Não quebre a linha,
 set ruler           " Mostra a posição do cursor
 set showmatch       " Destaque no parêntese que casa com o parêntese sob o cursor
-set wildmenu        " Completar automaticamente o nome do buffer com <tab>... sensacional!
+set wildmenu        " Opção de autocompletar com o tab as opções do vim em comand-line
 
 set nobackup        " Confio no meu controlador de versões :)
 set noswapfile      " Commit all the fucking time
@@ -32,21 +34,21 @@ set autoread        " Para os casos do arquivo ser alterado após aberto
 " Opções da linha de status.
 " -----------------------------------------------
 " Exemplo de como fica (sem tantos espaços):
-" [1] [+][RO]  ~/.vimrc       [vim]   [utf-8]   34,   0x22      0-15 13%"
-" Buffer, Modificaçao ou Apenas Leitura, Arquivo, Tipo Codificação, Ascii, Hex, Coluna, Linha, Percentual de scroll do arquivo
+" [1][+][RO] ~/.vimrc       [vim]   [utf-8]   34,   0x22      0-15 13%"
+" Buffer, Modificaçao, Apenas Leitura, Arquivo, Tipo Codificação, Ascii, Hex, Coluna, Linha, Percentual de scroll do arquivo
 
 set laststatus=2    " Quando exibir a linha de status: 2=always
 
 set statusline=                                 " Limpa a linha de status
-set statusline+=[%n]                           " Número do buffer atual
+set statusline+=[%n]                            " Número do buffer atual
 set statusline+=%m%r\                           " [+] Quando o arquivo for modificado, [RO] para apenas leitura
 set statusline+=%f\                             " Nome do arquivo
 set statusline+=[%{strlen(&ft)?&ft:'none'}]     " Tipo do arquivo
 set statusline+=[%{strlen(&fenc)?&fenc:&enc}]   " Codificação
 set statusline+=%=                              " Alinha tudo a seguir à direita
-set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " Como o vim interpreta o cursor abaixo, tipo vimString
 set statusline+=%b,0x%-8B\                      " ASCII e número hexadecimal do caractere sob o cursor
 set statusline+=%-4.(%l-%c%)\ %<%P              " Linha-coluna e percentual do arquivo
+"set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " Como o vim interpreta o cursor abaixo, tipo vimString
 
 " -----------------------------------------------
 " Opções de pequisa
@@ -95,7 +97,6 @@ map <leader>t :TlistToggle<CR>
 "-----------------------------------------------
 " Opções para o TagList
 "-----------------------------------------------
-
 let Tlist_Use_Right_Window=1            " Lista de tags à direita
 let Tlist_GainFocus_On_ToggleOpen=1     " Ganhar foco ao abrir a janela
 let Tlist_File_Fold_Auto_Close=1        " Não exibe tags de buffers inativos
