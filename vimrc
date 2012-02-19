@@ -22,6 +22,7 @@ set number          " Mostra o número de linhas
 set nowrap          " Não quebre a linha,
 set ruler           " Mostra a posição do cursor
 set showmatch       " Destaque no parêntese que casa com o parêntese sob o cursor
+set wildmenu        " Completar automaticamente o nome do buffer com <tab>... sensacional!
 
 set nobackup        " Confio no meu controlador de versões :)
 set noswapfile      " Commit all the fucking time
@@ -43,9 +44,9 @@ set statusline+=%m%r                            " [+] Quando o arquivo for modif
 set statusline+=[%{strlen(&ft)?&ft:'none'}]     " Tipo do arquivo
 set statusline+=[%{strlen(&fenc)?&fenc:&enc}]   " Codificação
 set statusline+=%=                              " Alinha tudo a seguir à direita
+set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " Como o vim interpreta o cursor abaixo, tipo vimString
 set statusline+=%b,0x%-8B\                      " ASCII e número hexadecimal do caractere sob o cursor
 set statusline+=%-4.(%l-%c%)\ %<%P              " Linha-coluna e percentual do arquivo
-"set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " Como o vim interpreta o cursor abaixo, tipo vimString
 
 " -----------------------------------------------
 " Opções de pequisa
