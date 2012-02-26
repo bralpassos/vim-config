@@ -12,9 +12,8 @@ set nocompatible    " Be IMproved
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
-syntax on           " Todas as opções referentes ao background, por exemplo, ficam no próprio arquivo de cores
-
-filetype on         " Comporta-se adquadamente de acordo com o formato do arquivo sendo editado
+syntax on                   " Todas as opções referentes ao background, por exemplo, ficam no próprio arquivo de cores
+filetype plugin indent on   " Comporta-se adquadamente de acordo com o formato do arquivo sendo editado
 
 " -----------------------------------------------
 " Opções que afetarão o comportamento visual
@@ -33,9 +32,7 @@ set autoread        " Para os casos do arquivo ser alterado após aberto
 " -----------------------------------------------
 " Opções da linha de status.
 " -----------------------------------------------
-" Exemplo de como fica (sem tantos espaços):
 " [1][+][RO] ~/.vimrc       [vim]   [utf-8]   34,   0x22      0-15 13%"
-" Buffer, Modificaçao, Apenas Leitura, Arquivo, Tipo Codificação, Ascii, Hex, Coluna, Linha, Percentual de scroll do arquivo
 
 set laststatus=2    " Quando exibir a linha de status: 2=always
 
@@ -56,6 +53,7 @@ set statusline+=%-4.(%l-%c%)\ %<%P              " Linha-coluna e percentual do a
 set incsearch       " Pesquisa incremental
 set ignorecase      " Auto explicativo...
 set hlsearch        " Highligth search :)
+set smartcase       " Se a pesquisa for tudo minúsculo, ignora o case, mas se houver pelo menos um caractere maiúsculo, o case será levado em consideração
 
 " -----------------------------------------------
 " Tabs e espaços
@@ -112,7 +110,7 @@ let NERDTreeIgnore=['\.*pyc$', '\.git$', '\.hg$']   " Arquivos ignorados pelo NE
 "-----------------------------------------------
 " Opções do autocmd
 "-----------------------------------------------
-" Ao salvar um buffer remover todos os espaços em branco ao final da linha
+" Ao salvar um buffer remove todos os espaços em branco ao final da linha
 if has('autocmd')
     autocmd BufWritePre * :call <SID>StripWhite()
     fun! <SID>StripWhite()
