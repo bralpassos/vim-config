@@ -1,1 +1,0 @@
-/home/saganium/.vim/vimrc
