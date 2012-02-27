@@ -13,7 +13,7 @@ call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
 syntax on                   " Todas as opções referentes ao background, por exemplo, ficam no próprio arquivo de cores
-filetype plugin indent on   " Comporta-se adquadamente de acordo com o formato do arquivo sendo editado
+filetype on   " Comporta-se adquadamente de acordo com o formato do arquivo sendo editado
 
 " -----------------------------------------------
 " Opções que afetarão o comportamento visual
