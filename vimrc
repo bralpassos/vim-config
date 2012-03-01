@@ -12,8 +12,8 @@ set nocompatible    " Be IMproved
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
-syntax on                   " Todas as opções referentes ao background, por exemplo, ficam no próprio arquivo de cores
-filetype on   " Comporta-se adquadamente de acordo com o formato do arquivo sendo editado
+syntax on               " Todas as opções referentes ao background, por exemplo, ficam no próprio arquivo de cores
+filetype plugin on      " Comporta-se adquadamente de acordo com o formato do arquivo sendo editado
 
 " -----------------------------------------------
 " Opções que afetarão o comportamento visual

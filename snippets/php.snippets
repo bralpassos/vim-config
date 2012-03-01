@@ -76,3 +76,16 @@ snippet debugt
 
 snippet echot
 	<?php echo $${1:variable}; ?>
+
+snippet func_doc
+	/**
+	 * $2
+	 *
+	 * ${4}
+	 *
+	 * @access ${1:public}
+	 * @return ${5:void}
+	 **/
+	${1:public} function ${2:nome} (${3}) {
+		${6}
+	}
