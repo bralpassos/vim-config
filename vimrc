@@ -81,7 +81,7 @@ noremap <C-y> 2<C-y>
 map <leader>h :nohlsearch<CR>
 
 " Para para exibir/ocultar o NERDTree, eu achei que eu não iria precisar disso..
-map <leader>n :set NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
 
 " Avisa o vim para identar ou nao o texto ao colar e copiar algo externamente
 map <leader>p :set paste<CR>
