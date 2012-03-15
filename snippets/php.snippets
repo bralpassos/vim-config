@@ -74,9 +74,6 @@ snippet debugt
 		<?php print_r(${1}); ?>
 	</pre>
 
-snippet echot
-	<?php echo $${1:variable}; ?>
-
 snippet func_doc
 	/**
 	 * $2
@@ -89,3 +86,6 @@ snippet func_doc
 	${1:public} function ${2:nome} (${3}) {
 		${6}
 	}
+
+snippet echot
+	<?php echo $${1:variable}; ?>

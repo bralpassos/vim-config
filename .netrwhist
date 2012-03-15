@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/saganium/.vim/vimrc'
 let g:netrw_dirhist_2='/home/bruno/.vim'
 let g:netrw_dirhist_3='/home/bruno/Downloads/CodeIgniter_2.1.0'
 let g:netrw_dirhist_4='/home/saganium/.vim'
 let g:netrw_dirhist_5='/etc/apache2'
 let g:netrw_dirhist_6='/home/saganium/projetos/casoft'
+let g:netrw_dirhist_7='/home/bruno/.config'
