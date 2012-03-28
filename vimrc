@@ -109,15 +109,3 @@ let tlist_php_settings='php;c:Classes;f:Functions' " Escondendo variáveis no Ta
 "-----------------------------------------------
 let NERDTreeShowHidden=1                            " Exibe os arquivos ocultos
 let NERDTreeIgnore=['\.*pyc$', '\.git$', '\.hg$']   " Arquivos ignorados pelo NERDTree
-
-"-----------------------------------------------
-" Opções do autocmd
-"-----------------------------------------------
-" Ao salvar um buffer remove todos os espaços em branco ao final da linha
-if has('autocmd')
-    autocmd BufWritePre * :call <SID>StripWhite()
-    fun! <SID>StripWhite()
-        %s/[ \t]\+$//ge
-        %s!^\( \+\)\t!\=StrRepeat("\t", 1 + strlen(submatch(1)) / 8)!ge
-    endfun
-endif
