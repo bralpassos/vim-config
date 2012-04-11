@@ -20,4 +20,4 @@ Além disso ao rodar o update do submodule todos os plugins estarão com a últi
 Notas:
 
 Para que o plugin TagList funcione adequadamente é necessário a instação do ctags/exuberant-ctags.
-Não estou usando um atalho para o NERDTree porque não vi necessidade. O abro usando <ESC>NERD<tab>, e uma vez aberto, sempre aberto >:)
+
