@@ -5,13 +5,13 @@ Todos os plugin estão instalados através do Pathogen e utilizando submódulos 
 
 Crie um link do vimrc controlado pelo git para o seu $HOME, por exemplo:
 
-    ln -s ~/.vim/vimrc ~/.vimrc
+    $ ln -s ~/.vim/vimrc ~/.vimrc
 
 ## Submódulos
 
 Para atualizar todos os plugins com a última versão no Github:
 
-    git submodule update --init
+    $ git submodule update --init
 
 Todos os arquivos do plugin, como /doc, /syntax e etc ficam em seu diretório específico dentro do vim/bundle.
 Para remover o plugin basta remover o diretório, sem ter que ficar caçando onde tem arquivos do plugin.
