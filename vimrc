@@ -101,6 +101,7 @@ map <leader>t :TlistToggle<CR>
 let Tlist_Use_Right_Window=1            " Lista de tags à direita
 let Tlist_GainFocus_On_ToggleOpen=1     " Ganhar foco ao abrir a janela
 let Tlist_File_Fold_Auto_Close=1        " Não exibe tags de buffers inativos
+let Tlist_Close_On_Select=1             " Fecha o TagList ao selecionar alguma opção
 
 let tlist_php_settings='php;c:Classes;f:Functions' " Escondendo variáveis no TagList para PHP
 
