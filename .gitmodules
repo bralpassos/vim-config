@@ -10,3 +10,9 @@
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = git://github.com/jcf/tag_list.vim.git
+[submodule "git-vim"]
+	path = git-vim
+	url = git://github.com/motemen/git-vim.git
+[submodule "bundle/git-vim"]
+	path = bundle/git-vim
+	url = git://github.com/motemen/git-vim.git
