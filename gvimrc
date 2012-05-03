@@ -1,4 +1,4 @@
-colorscheme lucius
+colorscheme xoria256
 
 set guioptions-=m       " remove o menu
 set guioptions-=T       " remove a barra de ferramentas
