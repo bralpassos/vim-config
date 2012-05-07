@@ -16,3 +16,6 @@
 [submodule "bundle/git-vim"]
 	path = bundle/git-vim
 	url = git://github.com/motemen/git-vim.git
+[submodule "bundle/csapprox"]
+	path = bundle/csapprox
+	url = https://github.com/godlygeek/csapprox.git
