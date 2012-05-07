@@ -25,10 +25,6 @@ set ruler           " Mostra a posição do cursor
 set showmatch       " Destaque no parêntese que casa com o parêntese sob o cursor
 set wildmenu        " Opção de autocompletar com o tab as opções do vim em comand-line
 
-set nobackup        " Confio no meu controlador de versões :)
-set noswapfile      " Commit all the fucking time
-set autoread        " Para os casos do arquivo ser alterado após aberto
-
 " -----------------------------------------------
 " Opções da linha de status.
 " -----------------------------------------------
