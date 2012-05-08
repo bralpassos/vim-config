@@ -1,3 +1,5 @@
+set guifont=Monospace\ 8
+
 colorscheme xoria256
 
 " set guioptions-=m       " remove o menu
