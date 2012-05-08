@@ -106,3 +106,9 @@ let tlist_php_settings='php;c:Classes;f:Functions' " Escondendo variáveis no Ta
 "-----------------------------------------------
 let NERDTreeShowHidden=1                            " Exibe os arquivos ocultos
 let NERDTreeIgnore=['\.*pyc$', '\.git$', '\.hg$']   " Arquivos ignorados pelo NERDTree
+
+"-----------------------------------------------
+" Opções via autocmd
+"-----------------------------------------------
+
+autocmd BufRead,BufNewFile *.twig set filetype=jinja
