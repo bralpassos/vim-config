@@ -25,3 +25,6 @@
 [submodule "bundle/jinja2"]
 	path = bundle/jinja2
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
+[submodule "bundle/phpcs"]
+	path = bundle/phpcs
+	url = https://github.com/bpearson/vim-phpcs.git
