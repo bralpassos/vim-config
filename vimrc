@@ -18,12 +18,12 @@ filetype plugin on      " Comporta-se adquadamente de acordo com o formato do ar
 " -----------------------------------------------
 " Opções que afetarão o comportamento visual
 " -----------------------------------------------
-set showmode        " Sempre exibir em qual modo esta atualmente
-set number          " Mostra o número de linhas
-set nowrap          " Não quebre a linha,
-set ruler           " Mostra a posição do cursor
-set showmatch       " Destaque no parêntese que casa com o parêntese sob o cursor
-set wildmenu        " Opção de autocompletar com o tab as opções do vim em comand-line
+set showmode            " Sempre exibir em qual modo esta atualmente
+set number              " Mostra o número de linhas
+set nowrap              " Não quebre a linha
+set showmatch           " Destaque no parêntese que casa com o parêntese sob o cursor
+set wildmenu            " Opção de autocompletar com o tab as opções do vim em comand-line
+set visualbell t_vb=    " Desabilita o barulho irritante do speaker, e ao invés de piscar a tela não faz nada
 
 " -----------------------------------------------
 " Opções da linha de status.
@@ -40,7 +40,7 @@ set statusline+=[%{strlen(&ft)?&ft:'none'}]     " Tipo do arquivo
 set statusline+=[%{strlen(&fenc)?&fenc:&enc}]   " Codificação
 set statusline+=%=                              " Alinha tudo a seguir à direita
 set statusline+=%b,0x%-8B\                      " ASCII e número hexadecimal do caractere sob o cursor
-set statusline+=%-4.(%l-%c%)\ %<%P              " Linha-coluna e percentual do arquivo
+set statusline+=%-4.(%l-%c%)\ %<%P              " Linha-coluna do cursor e percentual do arquivo
 "set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " Como o vim interpreta o cursor abaixo, tipo vimString
 
 " -----------------------------------------------
