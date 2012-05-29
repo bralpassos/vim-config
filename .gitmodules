@@ -19,9 +19,6 @@
 [submodule "bundle/csapprox"]
 	path = bundle/csapprox
 	url = https://github.com/godlygeek/csapprox.git
-[submodule "bundle/mustache"]
-	path = bundle/mustache
-	url = git://github.com/juvenn/mustache.vim.git
 [submodule "bundle/jinja2"]
 	path = bundle/jinja2
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git

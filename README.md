@@ -20,4 +20,4 @@ Além disso ao rodar o update do submodule todos os plugins estarão com a últi
 Notas:
 
 Para que o plugin TagList funcione adequadamente é necessário a instação do ctags/exuberant-ctags.
-
+Também é necessário a instalação do phpcs, que pode ser instalado via pear: # pear install PHP_CodeSniffer
