@@ -30,7 +30,7 @@ set visualbell t_vb=    " Desabilita o barulho irritante do speaker, e ao invés
 " -----------------------------------------------
 " [1][+][RO] ~/.vimrc       [vim]   [utf-8]   34,   0x22      0-15 13%"
 
-set laststatus=2    " Quando exibir a linha de status: 2=always
+set laststatus=2                                " Quando exibir a linha de status: 2=always
 
 set statusline=                                 " Limpa a linha de status
 set statusline+=[%n]                            " Número do buffer atual
@@ -89,6 +89,7 @@ map <leader>R :set number<CR>
 
 map <leader>t :TlistToggle<CR>
 
+" Exibe o log no git da primeira vez que a palavra sob o cursor foi adicionada 
 map <leader>g1 :!git log --reverse -p -S<cword> %<CR>
 
 " Como os mapas são apenas atalhos não vi motivo para utilizar o '<silent>'
@@ -107,8 +108,9 @@ let tlist_php_settings='php;c:Classes;f:Functions' " Escondendo variáveis no Ta
 " Opções para o NERDTree
 "-----------------------------------------------
 let NERDTreeShowHidden=1                            " Exibe os arquivos ocultos
-let NERDTreeQuitOnOpen=1                            " Fecha o NEDTree ao abrir o arquivo
 let NERDChristmasTree=1                             " Algumas cores a mais, se disponível
+let NERDTreeHighlightCursorline=1                   " Tudo bem que esse é o padrão...
+let NERDTreeShowLineNumbers=1                       " TODO: Alterar pelo relativenumber, apenas para o NERDTree
 let NERDTreeIgnore=['\.*pyc$', '\.git$', '\.hg$']   " Arquivos ignorados pelo NERDTree
 
 "-----------------------------------------------
