@@ -105,6 +105,8 @@ let tlist_php_settings='php;c:Classes;f:Functions' " Escondendo variáveis no Ta
 " Opções para o NERDTree
 "-----------------------------------------------
 let NERDTreeShowHidden=1                            " Exibe os arquivos ocultos
+let NERDTreeQuitOnOpen=1                            " Fecha o NEDTree ao abrir o arquivo
+let NERDChristmasTree=1                             " Algumas cores a mais, se disponível
 let NERDTreeIgnore=['\.*pyc$', '\.git$', '\.hg$']   " Arquivos ignorados pelo NERDTree
 
 "-----------------------------------------------
