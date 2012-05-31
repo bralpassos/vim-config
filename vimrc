@@ -89,6 +89,8 @@ map <leader>R :set number<CR>
 
 map <leader>t :TlistToggle<CR>
 
+map <leader>g1 :!git log --reverse -p -S<cword> %<CR>
+
 " Como os mapas são apenas atalhos não vi motivo para utilizar o '<silent>'
 
 "-----------------------------------------------
