@@ -87,6 +87,11 @@ map <leader>P :set nopaste<CR>
 map <leader>r :set relativenumber<CR>
 map <leader>R :set number<CR>
 
+" Atalhos para navegação pelo QuickFix
+map <leader>co :copen<CR>
+map <leader>cn :cnext<CR>
+map <leader>cp :cprevious<CR>
+
 map <leader>t :TlistToggle<CR>
 
 " Exibe o log no git da primeira vez que a palavra sob o cursor foi adicionada 
@@ -116,7 +121,6 @@ let NERDTreeIgnore=['\.*pyc$', '\.git$', '\.hg$']   " Arquivos ignorados pelo NE
 "-----------------------------------------------
 " Opções via autocmd
 "-----------------------------------------------
-
 if has("autocmd")
     autocmd BufRead,BufNewFile *.twig set filetype=jinja
 endif
