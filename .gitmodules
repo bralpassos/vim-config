@@ -25,3 +25,6 @@
 [submodule "bundle/phpcs"]
 	path = bundle/phpcs
 	url = https://github.com/bpearson/vim-phpcs.git
+[submodule "bundle/commentary"]
+	path = bundle/commentary
+	url = git://github.com/tpope/vim-commentary.git

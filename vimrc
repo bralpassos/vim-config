@@ -25,6 +25,8 @@ set showmatch           " Destaque no parêntese que casa com o parêntese sob o
 set wildmenu            " Opção de autocompletar com o tab as opções do vim em comand-line
 set visualbell t_vb=    " Desabilita o barulho irritante do speaker, e ao invés de piscar a tela não faz nada
 
+set mouse=a             " Mesmo que eu não use, é interessante ter habilitado por padrão
+
 " -----------------------------------------------
 " Opções da linha de status.
 " -----------------------------------------------
@@ -93,6 +95,10 @@ map <leader>cn :cnext<CR>
 map <leader>cp :cprevious<CR>
 
 map <leader>t :TlistToggle<CR>
+
+" Mapas para exibir/ocultar a barra com a limitação da 80ª coluna
+map <leader>8 :set colorcolumn=81<CR>
+map <leader>0 :set colorcolumn=0<CR>
 
 " Exibe o log no git da primeira vez que a palavra sob o cursor foi adicionada 
 map <leader>g1 :!git log --reverse -p -S<cword> %<CR>
