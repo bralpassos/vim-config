@@ -24,8 +24,10 @@ set nowrap              " Não quebre a linha
 set showmatch           " Destaque no parêntese que casa com o parêntese sob o cursor
 set wildmenu            " Opção de autocompletar com o tab as opções do vim em comand-line
 set visualbell t_vb=    " Desabilita o barulho irritante do speaker, e ao invés de piscar a tela não faz nada
+set directory=~/.vim/tmp,. " Salva os arquivos de sessão do vim em um diretório à parte
+set backupdir=~/.vim/tmp,. " Salva os arquivos de sessão do vim em um diretório à parte
 
-set mouse=a             " Mesmo que eu não use, é interessante ter habilitado por padrão
+set mouse=a                 " Mesmo que eu não use, é interessante ter habilitado por padrão
 
 " -----------------------------------------------
 " Opções da linha de status.
@@ -48,10 +50,11 @@ set statusline+=%-4.(%l-%c%)\ %<%P              " Linha-coluna do cursor e perce
 " -----------------------------------------------
 " Opções de pequisa
 " -----------------------------------------------
-set incsearch       " Pesquisa incremental
-set ignorecase      " Auto explicativo...
-set hlsearch        " Highligth search :)
-set smartcase       " Se a pesquisa for tudo minúsculo, ignora o case, mas se houver pelo menos um caractere maiúsculo, o case será levado em consideração
+set incsearch           " Pesquisa incremental
+set ignorecase          " Auto explicativo...
+set hlsearch            " Highligth search :)
+set smartcase           " Se a pesquisa for tudo minúsculo, ignora o case, mas se houver pelo menos um caractere maiúsculo, o case será levado em consideração
+set grepprg=ack-grep    " Utiliza o ack-grep como ferramenta de pesquisa para o comando :grep
 
 " -----------------------------------------------
 " Tabs e espaços

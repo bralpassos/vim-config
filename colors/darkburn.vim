@@ -23,7 +23,6 @@ set t_Co=256
 "highlight FoldColumn          guifg=#93b3a3 ctermfg=72  guibg=#3f4040 ctermbg=66  gui=none cterm=none
 "highlight Folded              guifg=#93b3a3 ctermfg=72  guibg=#3f4040 ctermbg=66  gui=none cterm=none
 "highlight StatusLineNC        guifg=#2e3330 ctermfg=72  guibg=#88b090 ctermbg=108 gui=none cterm=none
-"highlight Normal              guifg=#ffffff ctermfg=15  guibg=#1c1c1c ctermbg=234 gui=none cterm=none
 
 " Minhas modificações "
 highlight Comment             guifg=#eeeeee ctermfg=108     guibg=#1c1c1c ctermbg=none gui=italic cterm=none
@@ -37,7 +36,7 @@ highlight DiffDelete          guifg=#6c6661 ctermfg=59      guibg=#3c3631 ctermb
 highlight DiffText            guifg=#f05060 ctermfg=203     guibg=#4a343a ctermbg=52  gui=bold cterm=none
 highlight FoldColumn          guifg=#93b3a3 ctermfg=72      guibg=#3f4040 ctermbg=236 gui=none cterm=none
 highlight Folded              guifg=#93b3a3 ctermfg=72      guibg=#3f4040 ctermbg=236 gui=none cterm=none
-highlight Normal              guifg=#ffffff ctermfg=15      guibg=#1c1c1c ctermbg=none gui=none cterm=none
+"highlight Normal              guifg=#ffffff ctermfg=15      guibg=#1c1c1c ctermbg=none gui=none cterm=none
 
 
 " Opções padrões
@@ -77,6 +76,7 @@ highlight ModeMsg             guifg=#6fb86f ctermfg=71                          
 highlight MoreMsg             guifg=#ffffff ctermfg=15                            gui=none cterm=none
 highlight NonText             guifg=#404040 ctermfg=238                           gui=none cterm=none
 highlight Number              guifg=#8cd0d3 ctermfg=116                           gui=none cterm=none
+highlight Normal              guifg=#ffffff ctermfg=15  guibg=#1c1c1c ctermbg=234 gui=none cterm=none
 highlight Operator            guifg=#f0efd0 ctermfg=230                           gui=none cterm=none
 highlight PMenu               guifg=#a8a8a8 ctermfg=248 guibg=#000000 ctermbg=0   gui=none cterm=none
 highlight PMenuSbar           guifg=#000000 ctermfg=0   guibg=#2e3330 ctermbg=72  gui=none cterm=none
