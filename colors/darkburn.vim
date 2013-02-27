@@ -23,6 +23,7 @@ set t_Co=256
 "highlight FoldColumn          guifg=#93b3a3 ctermfg=72  guibg=#3f4040 ctermbg=66  gui=none cterm=none
 "highlight Folded              guifg=#93b3a3 ctermfg=72  guibg=#3f4040 ctermbg=66  gui=none cterm=none
 "highlight StatusLineNC        guifg=#2e3330 ctermfg=72  guibg=#88b090 ctermbg=108 gui=none cterm=none
+"highlight SpecialChar         guifg=#9fbfd6 ctermfg=110                           gui=none cterm=none
 
 " Minhas modificações "
 highlight Comment             guifg=#eeeeee ctermfg=108     guibg=#1c1c1c ctermbg=none gui=italic cterm=none
@@ -36,7 +37,7 @@ highlight DiffDelete          guifg=#6c6661 ctermfg=59      guibg=#3c3631 ctermb
 highlight DiffText            guifg=#f05060 ctermfg=203     guibg=#4a343a ctermbg=52  gui=bold cterm=none
 highlight FoldColumn          guifg=#93b3a3 ctermfg=72      guibg=#3f4040 ctermbg=236 gui=none cterm=none
 highlight Folded              guifg=#93b3a3 ctermfg=72      guibg=#3f4040 ctermbg=236 gui=none cterm=none
-"highlight Normal              guifg=#ffffff ctermfg=15      guibg=#1c1c1c ctermbg=none gui=none cterm=none
+highlight SpecialKey          ctermfg=8
 
 
 " Opções padrões
@@ -89,7 +90,6 @@ highlight Repeat              guifg=#ffd7a7 ctermfg=223                         
 highlight Search              guifg=#ffffe0 ctermfg=230 guibg=#284f28 ctermbg=71  gui=none cterm=none
 highlight SignColumn          guifg=#9fafaf ctermfg=109 guibg=#181818 ctermbg=234 gui=none cterm=none
 highlight Special             guifg=#9fbfd6 ctermfg=110                           gui=none cterm=none
-highlight SpecialChar         guifg=#9fbfd6 ctermfg=110                           gui=none cterm=none
 highlight SpecialComment      guifg=#82a282 ctermfg=108                           gui=none cterm=none
 highlight SpecialKey          guifg=#9ece9e ctermfg=151                           gui=none cterm=none
 highlight SpellBad            guifg=#dc8c6c ctermfg=173                           gui=none cterm=none
