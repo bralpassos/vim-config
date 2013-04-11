@@ -18,14 +18,15 @@ filetype plugin on      " Comporta-se adquadamente de acordo com o formato do ar
 " -----------------------------------------------
 " Opções que afetarão o comportamento visual
 " -----------------------------------------------
-set showmode            " Sempre exibir em qual modo esta atualmente
-set number              " Mostra o número de linhas
-set nowrap              " Não quebre a linha
-set showmatch           " Destaque no parêntese que casa com o parêntese sob o cursor
-set wildmenu            " Opção de autocompletar com o tab as opções do vim em comand-line
-set visualbell t_vb=    " Desabilita o barulho irritante do speaker, e ao invés de piscar a tela não faz nada
-set directory=~/.vim/tmp,. " Salva os arquivos de sessão do vim em um diretório à parte
-set backupdir=~/.vim/tmp,. " Salva os arquivos de sessão do vim em um diretório à parte
+set showmode                " Sempre exibir em qual modo esta atualmente
+set number                  " Mostra o número de linhas
+set nowrap                  " Não quebre a linha
+set showmatch               " Destaque no parêntese que casa com o parêntese sob o cursor
+set wildmenu                " Opção de autocompletar com o tab as opções do vim em comand-line
+set visualbell t_vb=        " Desabilita o barulho irritante do speaker, e ao invés de piscar a tela não faz nada
+set directory=~/.vim/tmp,.  " Salva os arquivos de sessão do vim em um diretório à parte
+set backupdir=~/.vim/tmp,.  " Salva os arquivos de sessão do vim em um diretório à parte
+set clipboard=unnamedplus   " Permite copiar textos no vim rodando no terminal para o clipboard
 
 set mouse=a                 " Mesmo que eu não use, é interessante ter habilitado por padrão
 
