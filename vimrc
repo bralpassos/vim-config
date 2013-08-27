@@ -60,16 +60,18 @@ set grepprg=ack-grep    " Utiliza o ack-grep como ferramenta de pesquisa para o 
 " -----------------------------------------------
 " Tabs e espaços
 " -----------------------------------------------
-set autoindent              " Mantém a mesma identação que a linha anterior
+set smartindent             " Mantém a mesma identação que a linha anterior
 set expandtab               " Troca o tab or espaços
 set tabstop=4               " Tab equivale a 4 espaços
 set shiftwidth=4            " Operações como identação usando o >> também com 4 espaços
 set softtabstop=4           " Operações como o backspace também com 4 espaços
 
-set list listchars=tab:>-   " Exibe o caractere tab para o caso de alguém cometer o sacrilégio de misturar espaços com tabs
+"set list listchars=tab:..   " Exibe o caractere tab para o caso de alguém cometer o sacrilégio de misturar espaços com tabs
+set list listchars=tab:→\ ,trail:·
 
 " Opção de cor obtida em <bytefluent.com/vivify/> com diversas modificações pessoais
 colorscheme darkburn
+colorscheme xoria256
 
 "-----------------------------------------------
 " Mapas das teclas
@@ -84,8 +86,9 @@ noremap <C-y> 2<C-y>
 " Desabilidar a marcação das palavras pesquisadas no momento
 map <leader>h :nohlsearch<CR>
 
-" Para para exibir/ocultar o NERDTree, eu achei que eu não iria precisar disso..
+" Para para exibir/ocultar o NERDTree e para atualizar o NERDTree com o arquivo aberto
 map <leader>n :NERDTreeToggle<CR>
+map <leader>N :NERDTreeFind<CR>
 
 " Avisa o vim para identar ou nao o texto ao colar e copiar algo externamente
 map <leader>p :set paste<CR>

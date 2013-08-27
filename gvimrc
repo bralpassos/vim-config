@@ -1,6 +1,8 @@
-set guifont=Monospace\ 8
+set guifont=Inconsolata\ 10
 
 colorscheme xoria256
+
+set visualbell t_vb=        " Desabilita o barulho irritante do speaker, e ao invés de piscar a tela não faz nada
 
 " set guioptions-=m       " remove o menu
 set guioptions-=T       " remove a barra de ferramentas
