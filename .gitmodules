@@ -4,27 +4,15 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
-[submodule "bundle/surround"]
-	path = bundle/surround
-	url = git://github.com/tpope/vim-surround.git
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = git://github.com/jcf/tag_list.vim.git
-[submodule "git-vim"]
-	path = git-vim
-	url = git://github.com/motemen/git-vim.git
 [submodule "bundle/git-vim"]
 	path = bundle/git-vim
 	url = git://github.com/motemen/git-vim.git
 [submodule "bundle/csapprox"]
-	path = bundle/csapprox
-	url = https://github.com/godlygeek/csapprox.git
-[submodule "bundle/jinja2"]
-	path = bundle/jinja2
-	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
-[submodule "bundle/phpcs"]
-	path = bundle/phpcs
-	url = https://github.com/bpearson/vim-phpcs.git
-[submodule "bundle/commentary"]
-	path = bundle/commentary
-	url = git://github.com/tpope/vim-commentary.git
+    path = bundle/csapprox
+    url = https://github.com/godlygeek/csapprox.git
+[submodule "bundle/jellybeans"]
+	path = bundle/jellybeans
+	url = https://github.com/nanotech/jellybeans.vim.git
