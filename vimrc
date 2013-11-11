@@ -55,7 +55,6 @@ set incsearch           " Pesquisa incremental
 set ignorecase          " Auto explicativo...
 set hlsearch            " Highligth search :)
 set smartcase           " Se a pesquisa for tudo minúsculo, ignora o case, mas se houver pelo menos um caractere maiúsculo, o case será levado em consideração
-set grepprg=ack-grep    " Utiliza o ack-grep como ferramenta de pesquisa para o comando :grep
 
 " -----------------------------------------------
 " Tabs e espaços
@@ -70,8 +69,9 @@ set softtabstop=4           " Operações como o backspace também com 4 espaço
 set list listchars=tab:→\ ,trail:·
 
 " Opção de cor obtida em <bytefluent.com/vivify/> com diversas modificações pessoais
-colorscheme darkburn
-colorscheme xoria256
+"colorscheme darkburn
+"colorscheme xoria256
+colorscheme jellybeans
 
 "-----------------------------------------------
 " Mapas das teclas
@@ -132,6 +132,12 @@ let NERDChristmasTree=1                             " Algumas cores a mais, se d
 let NERDTreeHighlightCursorline=1                   " Tudo bem que esse é o padrão...
 let NERDTreeShowLineNumbers=1                       " TODO: Alterar pelo relativenumber, apenas para o NERDTree
 let NERDTreeIgnore=['\.*pyc$', '\.git$', '\.hg$']   " Arquivos ignorados pelo NERDTree
+
+"-----------------------------------------------
+" Opções para o CtrlP
+"-----------------------------------------------
+nnoremap <leader>f :CtrlP<CR>
+let g:ctrlp_working_path_mode=''        "Pesquisa a partir do diretório atual
 
 "-----------------------------------------------
 " Opções via autocmd

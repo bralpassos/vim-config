@@ -1,7 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/bralpassos/dafiti/shop/alice/alice/protected/themes/dafiti/views/catalog'
-let g:netrw_dirhist_2='/home/bralpassos/dafiti/shop/alice/alice/protected/themes/dafiti/views/catalog/detail'
-let g:netrw_dirhist_3='/home/bralpassos/dafiti/alice'
-let g:netrw_dirhist_4='/home/bralpassos/dafiti/alice/alice/protected/config'
-let g:netrw_dirhist_5='/tmp'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/bralpassos/dafiti/alice/alice/protected/config'
+let g:netrw_dirhist_2='/home/bralpassos/dafiti/alice/alice/protected/controllers'
