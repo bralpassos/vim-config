@@ -68,11 +68,6 @@ set softtabstop=4           " Operações como o backspace também com 4 espaço
 "set list listchars=tab:..   " Exibe o caractere tab para o caso de alguém cometer o sacrilégio de misturar espaços com tabs
 set list listchars=tab:→\ ,trail:·
 
-" Opção de cor obtida em <bytefluent.com/vivify/> com diversas modificações pessoais
-"colorscheme darkburn
-"colorscheme xoria256
-colorscheme jellybeans
-
 "-----------------------------------------------
 " Mapas das teclas
 "-----------------------------------------------
@@ -98,19 +93,11 @@ map <leader>P :set nopaste<CR>
 map <leader>r :set relativenumber<CR>
 map <leader>R :set number<CR>
 
-" Atalhos para navegação pelo QuickFix
-map <leader>co :copen<CR>
-map <leader>cn :cnext<CR>
-map <leader>cp :cprevious<CR>
-
 map <leader>t :TlistToggle<CR>
 
 " Mapas para exibir/ocultar a barra com a limitação da 80ª coluna
 map <leader>8 :set colorcolumn=81<CR>
 map <leader>0 :set colorcolumn=0<CR>
-
-" Exibe o log no git da primeira vez que a palavra sob o cursor foi adicionada 
-map <leader>g1 :!git log --reverse -p -S<cword> %<CR>
 
 " Como os mapas são apenas atalhos não vi motivo para utilizar o '<silent>'
 
@@ -139,9 +126,3 @@ let NERDTreeIgnore=['\.*pyc$', '\.git$', '\.hg$']   " Arquivos ignorados pelo NE
 nnoremap <leader>f :CtrlP<CR>
 let g:ctrlp_working_path_mode=''        "Pesquisa a partir do diretório atual
 
-"-----------------------------------------------
-" Opções via autocmd
-"-----------------------------------------------
-if has("autocmd")
-    autocmd BufRead,BufNewFile *.twig set filetype=jinja
-endif
