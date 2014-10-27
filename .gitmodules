@@ -10,3 +10,18 @@
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "vdebug"]
+	path = vdebug
+	url = https://github.com/joonty/vdebug.git
+[submodule "mirodark"]
+	path = mirodark
+	url = https://github.com/djjcast/mirodark.git
+[submodule "bundle/badwolf"]
+	path = bundle/badwolf
+	url = https://github.com/sjl/badwolf
+[submodule "vim-lucius"]
+	path = vim-lucius
+	url = https://github.com/jonathanfilip/vim-lucius.git
+[submodule "vim-hybrid"]
+	path = vim-hybrid
+	url = https://github.com/w0ng/vim-hybrid.git

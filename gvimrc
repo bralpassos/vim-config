@@ -1,7 +1,5 @@
 set guifont=Inconsolata\ 10
 
-colorscheme jellybeans
-
 set visualbell t_vb=        " Desabilita o barulho irritante do speaker, e ao invés de piscar a tela não faz nada
 
 " set guioptions-=m       " remove o menu

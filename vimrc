@@ -1,22 +1,15 @@
-" Minhas configurações pessoais do ~/.vimrc
-" Mantido por Bruno Almeida <brunoalmeidapassos@gmail.com>
-"
-" A idéia é carregar apenas o mínimo necessário e sem plugins ao menos que sejam extremamente úteis
-" O vim por si só já faz um excelente trabalho ;)
-
 set nocompatible    " Be IMproved
 
-" -----------------------------------------------
-" Opções globais do Pathogen
-" -----------------------------------------------
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
 syntax on               " Todas as opções referentes ao background, por exemplo, ficam no próprio arquivo de cores
 filetype plugin on      " Comporta-se adquadamente de acordo com o formato do arquivo sendo editado
 
+"colorscheme darkburn
+
 " -----------------------------------------------
-" Opções que afetarão o comportamento visual
+" Opções gerais
 " -----------------------------------------------
 set showmode                " Sempre exibir em qual modo esta atualmente
 set number                  " Mostra o número de linhas
@@ -27,13 +20,12 @@ set visualbell t_vb=        " Desabilita o barulho irritante do speaker, e ao in
 set directory=~/.vim/tmp,.  " Salva os arquivos de sessão do vim em um diretório à parte
 set backupdir=~/.vim/tmp,.  " Salva os arquivos de sessão do vim em um diretório à parte
 set clipboard=unnamedplus   " Permite copiar textos no vim rodando no terminal para o clipboard
-
 set mouse=a                 " Mesmo que eu não use, é interessante ter habilitado por padrão
 
 " -----------------------------------------------
 " Opções da linha de status.
 " -----------------------------------------------
-" [1][+][RO] ~/.vimrc       [vim]   [utf-8]   34,   0x22      0-15 13%"
+" [1][+][RO] ~/.vimrc   [vim][utf-8]        0-15 13%"
 
 set laststatus=2                                " Quando exibir a linha de status: 2=always
 
@@ -44,9 +36,7 @@ set statusline+=%f\                             " Nome do arquivo
 set statusline+=[%{strlen(&ft)?&ft:'none'}]     " Tipo do arquivo
 set statusline+=[%{strlen(&fenc)?&fenc:&enc}]   " Codificação
 set statusline+=%=                              " Alinha tudo a seguir à direita
-set statusline+=%b,0x%-8B\                      " ASCII e número hexadecimal do caractere sob o cursor
 set statusline+=%-4.(%l-%c%)\ %<%P              " Linha-coluna do cursor e percentual do arquivo
-"set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " Como o vim interpreta o cursor abaixo, tipo vimString
 
 " -----------------------------------------------
 " Opções de pequisa
@@ -124,5 +114,5 @@ let NERDTreeIgnore=['\.*pyc$', '\.git$', '\.hg$']   " Arquivos ignorados pelo NE
 " Opções para o CtrlP
 "-----------------------------------------------
 nnoremap <leader>f :CtrlP<CR>
-let g:ctrlp_working_path_mode=''        "Pesquisa a partir do diretório atual
+let g:ctrlp_working_path_mode=''        "Pesquisa a partir do diretório que o vim foi aberto
 
