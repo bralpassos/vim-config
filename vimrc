@@ -11,32 +11,12 @@ filetype plugin on      " Comporta-se adquadamente de acordo com o formato do ar
 " -----------------------------------------------
 " Opções gerais
 " -----------------------------------------------
-set showmode                " Sempre exibir em qual modo esta atualmente
-set number                  " Mostra o número de linhas
+set number
 set nowrap                  " Não quebre a linha
-set showmatch               " Destaque no parêntese que casa com o parêntese sob o cursor
 set wildmenu                " Opção de autocompletar com o tab as opções do vim em comand-line
 set visualbell t_vb=        " Desabilita o barulho irritante do speaker, e ao invés de piscar a tela não faz nada
-set directory=~/.vim/tmp,.  " Salva os arquivos de sessão do vim em um diretório à parte
-set backupdir=~/.vim/tmp,.  " Salva os arquivos de sessão do vim em um diretório à parte
-set clipboard=unnamedplus   " Permite copiar textos no vim rodando no terminal para o clipboard
-set mouse=a                 " Mesmo que eu não use, é interessante ter habilitado por padrão
-
-" -----------------------------------------------
-" Opções da linha de status.
-" -----------------------------------------------
-" [1][+][RO] ~/.vimrc   [vim][utf-8]        0-15 13%"
-
-set laststatus=2                                " Quando exibir a linha de status: 2=always
-
-set statusline=                                 " Limpa a linha de status
-set statusline+=[%n]                            " Número do buffer atual
-set statusline+=%m%r\                           " [+] Quando o arquivo for modificado, [RO] para apenas leitura
-set statusline+=%f\                             " Nome do arquivo
-set statusline+=[%{strlen(&ft)?&ft:'none'}]     " Tipo do arquivo
-set statusline+=[%{strlen(&fenc)?&fenc:&enc}]   " Codificação
-set statusline+=%=                              " Alinha tudo a seguir à direita
-set statusline+=%-4.(%l-%c%)\ %<%P              " Linha-coluna do cursor e percentual do arquivo
+set directory=~/.vim/tmp,   " Salva os arquivos de sessão do vim em um diretório à parte
+set backupdir=~/.vim/tmp,   " Salva os arquivos de sessão do vim em um diretório à parte
 
 " -----------------------------------------------
 " Opções de pequisa
@@ -49,14 +29,13 @@ set smartcase           " Se a pesquisa for tudo minúsculo, ignora o case, mas 
 " -----------------------------------------------
 " Tabs e espaços
 " -----------------------------------------------
-set smartindent             " Mantém a mesma identação que a linha anterior
-set expandtab               " Troca o tab or espaços
-set tabstop=4               " Tab equivale a 4 espaços
-set shiftwidth=4            " Operações como identação usando o >> também com 4 espaços
-set softtabstop=4           " Operações como o backspace também com 4 espaços
+set smartindent                     " Mantém a mesma identação que a linha anterior
+set expandtab                       " Troca o tab or espaços
+set tabstop=4                       " Tab equivale a 4 espaços
+set shiftwidth=4                    " Operações como identação usando o >> também com 4 espaços
+set softtabstop=4                   " Operações como o backspace também com 4 espaços
+set list listchars=tab:→\ ,trail:·  " Exibe o caractere tab para o caso de alguém cometer o sacrilégio de misturar espaços com tabs
 
-"set list listchars=tab:..   " Exibe o caractere tab para o caso de alguém cometer o sacrilégio de misturar espaços com tabs
-set list listchars=tab:→\ ,trail:·
 
 "-----------------------------------------------
 " Mapas das teclas
@@ -81,15 +60,13 @@ map <leader>P :set nopaste<CR>
 
 " Define a linha atual como a linha zero na régua
 map <leader>r :set relativenumber<CR>
-map <leader>R :set number<CR>
+map <leader>R :set norelativenumber<CR>
 
 map <leader>t :TlistToggle<CR>
 
 " Mapas para exibir/ocultar a barra com a limitação da 80ª coluna
 map <leader>8 :set colorcolumn=81<CR>
 map <leader>0 :set colorcolumn=0<CR>
-
-" Como os mapas são apenas atalhos não vi motivo para utilizar o '<silent>'
 
 "-----------------------------------------------
 " Opções para o TagList
@@ -109,10 +86,3 @@ let NERDChristmasTree=1                             " Algumas cores a mais, se d
 let NERDTreeHighlightCursorline=1                   " Tudo bem que esse é o padrão...
 let NERDTreeShowLineNumbers=1                       " TODO: Alterar pelo relativenumber, apenas para o NERDTree
 let NERDTreeIgnore=['\.*pyc$', '\.git$', '\.hg$']   " Arquivos ignorados pelo NERDTree
-
-"-----------------------------------------------
-" Opções para o CtrlP
-"-----------------------------------------------
-nnoremap <leader>f :CtrlP<CR>
-let g:ctrlp_working_path_mode=''        "Pesquisa a partir do diretório que o vim foi aberto
-
